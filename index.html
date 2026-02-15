@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анонимные желания ✨</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🌱 Дерево желаний</h1>
+            <p class="subtitle">Загадай желание анонимно. Исполни чью-то мечту.</p>
+        </header>
+
+        <!-- Форма добавления желания -->
+        <div class="card add-wish-card">
+            <h2>Загадать желание</h2>
+            <form id="wishForm">
+                <input 
+                    type="text" 
+                    id="wishTitle" 
+                    placeholder="Что ты хочешь? (Например: Новый монитор)" 
+                    required
+                    maxlength="100"
+                >
+                <textarea 
+                    id="wishDesc" 
+                    placeholder="Расскажи подробнее (необязательно)" 
+                    rows="3"
+                    maxlength="500"
+                ></textarea>
+                <button type="submit" class="btn-primary">
+                    ✨ Опубликовать желание
+                </button>
+            </form>
+        </div>
+
+        <!-- Лента желаний -->
+        <div class="wishes-header">
+            <h2>Желания других людей</h2>
+            <div class="stats" id="stats">Загрузка...</div>
+        </div>
+
+        <div id="wishesList" class="wishes-grid">
+            <!-- Сюда будут подгружаться желания -->
+            <div class="loading">Загружаем желания...</div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для доната -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalWishTitle">Исполнить желание</h3>
+            
+            <div class="donate-options">
+                <div class="amount-presets">
+                    <button class="amount-btn" data-amount="500">500 ₽</button>
+                    <button class="amount-btn" data-amount="1000">1000 ₽</button>
+                    <button class="amount-btn" data-amount="3000">3000 ₽</button>
+                    <button class="amount-btn" data-amount="5000">5000 ₽</button>
+                </div>
+                
+                <div class="custom-amount">
+                    <label>Своя сумма:</label>
+                    <input type="number" id="customAmount" placeholder="Введите сумму" min="10">
+                </div>
+
+                <div class="donor-info">
+                    <label>Ваше имя (будет видно получателю):</label>
+                    <input type="text" id="donorName" placeholder="Аноним" value="Аноним">
+                </div>
+
+                <button id="payButton" class="btn-pay">
+                    💳 Оплатить картой
+                </button>
+                <p class="payment-info">
+                    Платеж защищен. Данные карты не сохраняются.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
