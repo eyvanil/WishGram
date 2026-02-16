@@ -313,7 +313,7 @@ input:focus, textarea:focus {
 
 .payment-info {
     text-align: center;
-    color: var(--gray);
+    color: var(--danger);
     font-size: 14px;
 }
 
