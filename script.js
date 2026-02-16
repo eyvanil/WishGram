@@ -1,6 +1,6 @@
 // Конфигурация
-const SUPABASE_URL = 'https://swqynkmgymbjunxqeyxl.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN3cXlua21neW1ianVueHFleXhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExNzk0NTIsImV4cCI6MjA4Njc1NTQ1Mn0.Jw3YLwJtL-3XDNgSjf7Hypu6dP_0WO3IKo9ofIwWUxI';
+const SUPABASE_URL = 'https://zlifvwrrxmtesvkoivzh/.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpsaWZ2d3JyeG10ZXN2a29pdnpoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEyNzEyMDYsImV4cCI6MjA4Njg0NzIwNn0.19gzo5RcX4hRPwV6K2EzwwRkGNWPlKj39m3W_pGXmfA';
 
 // Настройки Т-Кассы (Тинькофф)
 const TINKOFF_TERMINAL_KEY = 'Test_1654111111111'; // Замени на свой после регистрации
